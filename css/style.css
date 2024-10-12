@@ -5,6 +5,10 @@ body {
   box-sizing: border-box;
 }
 
+.pc {
+  text-align: center;
+}
+
 .top-content {
   height: 100vh;
 }
