@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top-content {
+  height: 100vh;
+}
+
+.content {
+  padding: 100px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.image-section {
+  padding: 100px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  align-items: center;
+  /* 画像を中央に揃える */
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 100px;
+  grid-template-rows: 300px 300px;
+}
+
+.image-gallery img {
+  width: 300px;
+  /* 画像の幅を調整 */
+  height: auto;
+  /* 縦横比を保持 */
+  opacity: 0;
+  /* 初期状態で非表示 */
+  transition: opacity 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  /* 表示時にフェードイン */
+}
